@@ -16,6 +16,18 @@
 		B02CD5EE1F13E07B00EE9BA1 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02CD5ED1F13E07B00EE9BA1 /* MessageTableViewController.swift */; };
 		B02CD5F01F13E08900EE9BA1 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02CD5EF1F13E08900EE9BA1 /* ProfileTableViewController.swift */; };
 		B02CD5F21F13E0A600EE9BA1 /* DiscorverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02CD5F11F13E0A600EE9BA1 /* DiscorverTableViewController.swift */; };
+		B0CCF6151F28E8C7002A9515 /* UIButton+Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */; };
+		B0CCF6171F28ED9B002A9515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6161F28ED9A002A9515 /* Main.storyboard */; };
+		B0CCF6191F28F012002A9515 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6181F28F012002A9515 /* home.storyboard */; };
+		B0CCF61B1F28F045002A9515 /* Messager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF61A1F28F045002A9515 /* Messager.storyboard */; };
+		B0CCF61D1F28F15E002A9515 /* Discorver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF61C1F28F15E002A9515 /* Discorver.storyboard */; };
+		B0CCF61F1F28F171002A9515 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF61E1F28F171002A9515 /* Profile.storyboard */; };
+		B0CCF6211F28F186002A9515 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6201F28F186002A9515 /* Null.storyboard */; };
+		B0CCF6241F28F3CF002A9515 /* Base_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6231F28F3CF002A9515 /* Base_TableViewController.swift */; };
+		B0CCF6271F28F721002A9515 /* VisiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6261F28F721002A9515 /* VisiterView.swift */; };
+		B0CCF6291F28F739002A9515 /* VisiterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6281F28F739002A9515 /* VisiterView.xib */; };
+		B0EF01CE1F167F3E006BBF24 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */; };
+		B0EF01CF1F167F3E006BBF24 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,18 @@
 		B02CD5ED1F13E07B00EE9BA1 /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		B02CD5EF1F13E08900EE9BA1 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		B02CD5F11F13E0A600EE9BA1 /* DiscorverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscorverTableViewController.swift; sourceTree = "<group>"; };
+		B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extern.swift"; sourceTree = "<group>"; };
+		B0CCF6161F28ED9A002A9515 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B0CCF6181F28F012002A9515 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = home.storyboard; path = iOS_WB/Class/Home/home.storyboard; sourceTree = SOURCE_ROOT; };
+		B0CCF61A1F28F045002A9515 /* Messager.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Messager.storyboard; path = iOS_WB/Class/Messager/Messager.storyboard; sourceTree = SOURCE_ROOT; };
+		B0CCF61C1F28F15E002A9515 /* Discorver.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discorver.storyboard; path = iOS_WB/Class/Discorver/Discorver.storyboard; sourceTree = SOURCE_ROOT; };
+		B0CCF61E1F28F171002A9515 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = iOS_WB/Class/Profile/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		B0CCF6201F28F186002A9515 /* Null.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Null.storyboard; sourceTree = "<group>"; };
+		B0CCF6231F28F3CF002A9515 /* Base_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_TableViewController.swift; sourceTree = "<group>"; };
+		B0CCF6261F28F721002A9515 /* VisiterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisiterView.swift; sourceTree = "<group>"; };
+		B0CCF6281F28F739002A9515 /* VisiterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisiterView.xib; sourceTree = "<group>"; };
+		B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +175,7 @@
 		B02CD5E31F13DFD400EE9BA1 /* Discorver */ = {
 			isa = PBXGroup;
 			children = (
+				B0CCF61C1F28F15E002A9515 /* Discorver.storyboard */,
 				B02CD5F11F13E0A600EE9BA1 /* DiscorverTableViewController.swift */,
 			);
 			path = Discorver;
@@ -159,6 +184,7 @@
 		B02CD5E41F13DFD400EE9BA1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B0CCF6181F28F012002A9515 /* home.storyboard */,
 				B02CD5EB1F13E06900EE9BA1 /* HomeTableViewController.swift */,
 			);
 			path = Home;
@@ -167,7 +193,11 @@
 		B02CD5E51F13DFD400EE9BA1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B0CCF6251F28F70F002A9515 /* View */,
+				B0CCF6221F28F3B8002A9515 /* BaseVC */,
+				B0EF01CB1F167F3E006BBF24 /* Resource */,
 				B02CD5E91F13E04B00EE9BA1 /* MainTabBarViewController.swift */,
+				B0CCF6161F28ED9A002A9515 /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -175,6 +205,7 @@
 		B02CD5E61F13DFD400EE9BA1 /* Messager */ = {
 			isa = PBXGroup;
 			children = (
+				B0CCF61A1F28F045002A9515 /* Messager.storyboard */,
 				B02CD5ED1F13E07B00EE9BA1 /* MessageTableViewController.swift */,
 			);
 			path = Messager;
@@ -183,6 +214,7 @@
 		B02CD5E71F13DFD400EE9BA1 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				B0CCF61E1F28F171002A9515 /* Profile.storyboard */,
 				B02CD5EF1F13E08900EE9BA1 /* ProfileTableViewController.swift */,
 			);
 			path = Profile;
@@ -191,8 +223,37 @@
 		B02CD5E81F13DFD400EE9BA1 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		B0CCF6221F28F3B8002A9515 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				B0CCF6231F28F3CF002A9515 /* Base_TableViewController.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		B0CCF6251F28F70F002A9515 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0CCF6261F28F721002A9515 /* VisiterView.swift */,
+				B0CCF6281F28F739002A9515 /* VisiterView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0EF01CB1F167F3E006BBF24 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */,
+				B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */,
+				B0CCF6201F28F186002A9515 /* Null.storyboard */,
+			);
+			name = Resource;
+			path = "../../../../../../../Swift/Swift项目 资料和代码/1201/备课代码-Storyboard/05-NJWB-动态加载控制器/NJWB/Classes/Main/Resource";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +360,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CCF6171F28ED9B002A9515 /* Main.storyboard in Resources */,
+				B0CCF6211F28F186002A9515 /* Null.storyboard in Resources */,
+				B0CCF6291F28F739002A9515 /* VisiterView.xib in Resources */,
+				B0CCF61B1F28F045002A9515 /* Messager.storyboard in Resources */,
+				B0CCF61D1F28F15E002A9515 /* Discorver.storyboard in Resources */,
+				B0EF01CE1F167F3E006BBF24 /* MainVCSettings.json in Resources */,
 				B02CD5BB1F13D1C400EE9BA1 /* Assets.xcassets in Resources */,
+				B0CCF61F1F28F171002A9515 /* Profile.storyboard in Resources */,
+				B0CCF6191F28F012002A9515 /* home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,9 +396,13 @@
 				B02CD5EC1F13E06900EE9BA1 /* HomeTableViewController.swift in Sources */,
 				B02CD5F01F13E08900EE9BA1 /* ProfileTableViewController.swift in Sources */,
 				B02CD5B41F13D1C400EE9BA1 /* AppDelegate.swift in Sources */,
+				B0CCF6151F28E8C7002A9515 /* UIButton+Extern.swift in Sources */,
+				B0CCF6241F28F3CF002A9515 /* Base_TableViewController.swift in Sources */,
 				B02CD5EE1F13E07B00EE9BA1 /* MessageTableViewController.swift in Sources */,
 				B02CD5EA1F13E04B00EE9BA1 /* MainTabBarViewController.swift in Sources */,
+				B0CCF6271F28F721002A9515 /* VisiterView.swift in Sources */,
 				B02CD5F21F13E0A600EE9BA1 /* DiscorverTableViewController.swift in Sources */,
+				B0EF01CF1F167F3E006BBF24 /* NullViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +649,7 @@
 				B02CD5DA1F13D1C400EE9BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B02CD5DB1F13D1C400EE9BA1 /* Build configuration list for PBXNativeTarget "iOS_WBTests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +658,7 @@
 				B02CD5DD1F13D1C400EE9BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B02CD5DE1F13D1C400EE9BA1 /* Build configuration list for PBXNativeTarget "iOS_WBUITests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +667,7 @@
 				B02CD5E01F13D1C400EE9BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
