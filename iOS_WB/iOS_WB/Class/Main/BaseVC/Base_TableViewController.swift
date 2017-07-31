@@ -29,9 +29,10 @@ class Base_TableViewController: UITableViewController {
     visiterView = VisiterView.visiterView()
     view = visiterView
     // 在swift中如果要实现协议一般会使用扩展来进行 是为了提高代码的阅读性
-    visiterView?.delegate = self
+//    visiterView?.delegate = self
     
-    
+    visiterView?.registerBut.addTarget(self, action: #selector(registerAction(register:))  , for: .touchUpInside)
+    visiterView?.loginBut.addTarget(self, action: #selector(loginAction(loginBut:)), for: .touchUpInside)
     }
     
     // MARK : - visiterView 的代理方法
@@ -40,21 +41,26 @@ class Base_TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+    }
+    
+    @objc func registerAction(register: UIButton){
+        STLog(message: "开心的 注册")
+    }
+    @objc func loginAction(loginBut: UIButton){
+        STLog(message: "开心的 登录吧")
     }
     
 
 }
 
 
-// swift 中一般为了提高代码的可读性 会将代理同一方在扩展中
-extension Base_TableViewController :VisiterViewDelegate  {
-    func visitorViewDidClickLoginBut(visitor: VisiterView) {
-        
-    }
-    func visitorViewDidClickRegisterBut(visitor: VisiterView) {
-        
-    }
-    
-}
+//// swift 中一般为了提高代码的可读性 会将代理同一方在扩展中
+//extension Base_TableViewController :VisiterViewDelegate  {
+//    func visitorViewDidClickLoginBut(visitor: VisiterView) {
+//
+//    }
+//    func visitorViewDidClickRegisterBut(visitor: VisiterView) {
+//
+//    }
+//}
 

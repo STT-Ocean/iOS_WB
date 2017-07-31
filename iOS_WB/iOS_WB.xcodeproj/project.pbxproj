@@ -16,6 +16,9 @@
 		B02CD5EE1F13E07B00EE9BA1 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02CD5ED1F13E07B00EE9BA1 /* MessageTableViewController.swift */; };
 		B02CD5F01F13E08900EE9BA1 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02CD5EF1F13E08900EE9BA1 /* ProfileTableViewController.swift */; };
 		B02CD5F21F13E0A600EE9BA1 /* DiscorverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02CD5F11F13E0A600EE9BA1 /* DiscorverTableViewController.swift */; };
+		B06FF0FF1F2A4146007D4198 /* UIBarButtonItem+Exten.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FF0FE1F2A4146007D4198 /* UIBarButtonItem+Exten.swift */; };
+		B06FF1011F2A4720007D4198 /* Title_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FF1001F2A4720007D4198 /* Title_Button.swift */; };
+		B06FF1031F2A52D4007D4198 /* TableViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FF1021F2A52D4007D4198 /* TableViewController+NavigationBar.swift */; };
 		B0CCF6151F28E8C7002A9515 /* UIButton+Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */; };
 		B0CCF6171F28ED9B002A9515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6161F28ED9A002A9515 /* Main.storyboard */; };
 		B0CCF6191F28F012002A9515 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6181F28F012002A9515 /* home.storyboard */; };
@@ -63,6 +66,9 @@
 		B02CD5ED1F13E07B00EE9BA1 /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		B02CD5EF1F13E08900EE9BA1 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		B02CD5F11F13E0A600EE9BA1 /* DiscorverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscorverTableViewController.swift; sourceTree = "<group>"; };
+		B06FF0FE1F2A4146007D4198 /* UIBarButtonItem+Exten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Exten.swift"; sourceTree = "<group>"; };
+		B06FF1001F2A4720007D4198 /* Title_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title_Button.swift; sourceTree = "<group>"; };
+		B06FF1021F2A52D4007D4198 /* TableViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extern.swift"; sourceTree = "<group>"; };
 		B0CCF6161F28ED9A002A9515 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B0CCF6181F28F012002A9515 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = home.storyboard; path = iOS_WB/Class/Home/home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -224,6 +230,9 @@
 			isa = PBXGroup;
 			children = (
 				B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */,
+				B06FF0FE1F2A4146007D4198 /* UIBarButtonItem+Exten.swift */,
+				B06FF1001F2A4720007D4198 /* Title_Button.swift */,
+				B06FF1021F2A52D4007D4198 /* TableViewController+NavigationBar.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -396,12 +405,15 @@
 				B02CD5EC1F13E06900EE9BA1 /* HomeTableViewController.swift in Sources */,
 				B02CD5F01F13E08900EE9BA1 /* ProfileTableViewController.swift in Sources */,
 				B02CD5B41F13D1C400EE9BA1 /* AppDelegate.swift in Sources */,
+				B06FF0FF1F2A4146007D4198 /* UIBarButtonItem+Exten.swift in Sources */,
 				B0CCF6151F28E8C7002A9515 /* UIButton+Extern.swift in Sources */,
 				B0CCF6241F28F3CF002A9515 /* Base_TableViewController.swift in Sources */,
 				B02CD5EE1F13E07B00EE9BA1 /* MessageTableViewController.swift in Sources */,
 				B02CD5EA1F13E04B00EE9BA1 /* MainTabBarViewController.swift in Sources */,
 				B0CCF6271F28F721002A9515 /* VisiterView.swift in Sources */,
 				B02CD5F21F13E0A600EE9BA1 /* DiscorverTableViewController.swift in Sources */,
+				B06FF1031F2A52D4007D4198 /* TableViewController+NavigationBar.swift in Sources */,
+				B06FF1011F2A4720007D4198 /* Title_Button.swift in Sources */,
 				B0EF01CF1F167F3E006BBF24 /* NullViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

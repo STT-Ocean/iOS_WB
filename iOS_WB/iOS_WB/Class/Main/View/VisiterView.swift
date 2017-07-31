@@ -13,10 +13,10 @@ import UIKit
  
  */
  // 定义了一个名字为VisiterViewDelegate 的代理
-protocol VisiterViewDelegate:NSObjectProtocol {
-    func visitorViewDidClickLoginBut(visitor :VisiterView)
-    func visitorViewDidClickRegisterBut(visitor : VisiterView)
-}
+//protocol VisiterViewDelegate:NSObjectProtocol {
+//    func visitorViewDidClickLoginBut(visitor :VisiterView)
+//    func visitorViewDidClickRegisterBut(visitor : VisiterView)
+//}
 
 class VisiterView: UIView {
     
@@ -28,7 +28,7 @@ class VisiterView: UIView {
     @IBOutlet weak var registerBut: UIButton!
     @IBOutlet weak var loginBut: UIButton!
     
-    weak var delegate : VisiterViewDelegate?
+//    weak var delegate : VisiterViewDelegate?
     // 在xib中的连线使用的是weak 而且是强制解包类型
     // 用于设置访客视图上的数据 title 是需要显示的标题
     func setUpVisitorInfo(imageName:String?,title:String){
@@ -64,12 +64,12 @@ class VisiterView: UIView {
         // 注册方法
         // 和oc不一样 swift中如果简单的调用代理方法不用判断代理能否响应
         // 原因 是因为  默认中协议里的方法是必须实现的
-       delegate?.visitorViewDidClickRegisterBut(visitor: self)
+//       delegate?.visitorViewDidClickRegisterBut(visitor: self)
     }
     
     @IBAction func loginAction(_ sender: Any) {
         // 登录方法
-        delegate?.visitorViewDidClickLoginBut(visitor: self)
+//        delegate?.visitorViewDidClickLoginBut(visitor: self)
     }
     
     // func oc 的 - 方法
