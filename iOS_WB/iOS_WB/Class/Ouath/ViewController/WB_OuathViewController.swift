@@ -56,14 +56,8 @@ extension WB_OuathViewController : UIWebViewDelegate{
             
         }, success: { (task: URLSessionDataTask, dict : Any?) in
             
-            guard let dictOpe = dict  else{
-                return
-            }
-            // 这个地方不这样进行处理 会导致不能转模型
-//            let myDict : [String : Any] = dictOpe as! [String:Any]
-//
-//            let userAccont = UserAccount.init(dict: myDict)
-//
+            
+//            let userAccount = UserAccount.deserialize(from: dictOpe )
             
         }) { (task: URLSessionDataTask?, error : Error) in
             

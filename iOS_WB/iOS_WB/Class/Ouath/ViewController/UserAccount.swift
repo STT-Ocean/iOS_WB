@@ -7,8 +7,8 @@
 //
 
 import UIKit
-//import HandyJSON
-class UserAccount: NSObject {
+
+class UserAccount: HandyJSON {
     
     var access_token : String?
     var expires_in : String?
