@@ -38,7 +38,6 @@ class Base_TableViewController: UITableViewController {
     // MARK : - visiterView 的代理方法
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @objc func registerAction(register: UIButton){
@@ -46,9 +45,10 @@ class Base_TableViewController: UITableViewController {
     }
     @objc func loginAction(loginBut: UIButton){
         STLog(message: "开心的 登录吧")
+        let sb = UIStoryboard.init(name: "Ouath", bundle: nil)
+        let ouath = sb.instantiateInitialViewController()
+        present(ouath!, animated: true, completion: nil)
     }
-    
-
 }
 
 

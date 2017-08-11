@@ -21,6 +21,9 @@
 		B06FF1011F2A4720007D4198 /* Title_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FF1001F2A4720007D4198 /* Title_Button.swift */; };
 		B06FF1031F2A52D4007D4198 /* TableViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FF1021F2A52D4007D4198 /* TableViewController+NavigationBar.swift */; };
 		B090486B1F35C3B30014999A /* STPresentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B090486A1F35C3B30014999A /* STPresentManager.swift */; };
+		B0AE0BC71F3D4A5E00650DB7 /* WB_Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE0BC61F3D4A5E00650DB7 /* WB_Common.swift */; };
+		B0AE0BC91F3D4AFA00650DB7 /* Ouath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AE0BC81F3D4AFA00650DB7 /* Ouath.storyboard */; };
+		B0AE0BCB1F3D4B3400650DB7 /* WB_OuathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE0BCA1F3D4B3400650DB7 /* WB_OuathViewController.swift */; };
 		B0CCF6151F28E8C7002A9515 /* UIButton+Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */; };
 		B0CCF6171F28ED9B002A9515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6161F28ED9A002A9515 /* Main.storyboard */; };
 		B0CCF6191F28F012002A9515 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6181F28F012002A9515 /* home.storyboard */; };
@@ -107,6 +110,9 @@
 		B0AE0BC31F3D464E00650DB7 /* TransformOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
 		B0AE0BC41F3D464E00650DB7 /* TransformType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
 		B0AE0BC51F3D464E00650DB7 /* URLTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		B0AE0BC61F3D4A5E00650DB7 /* WB_Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_Common.swift; sourceTree = "<group>"; };
+		B0AE0BC81F3D4AFA00650DB7 /* Ouath.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ouath.storyboard; sourceTree = "<group>"; };
+		B0AE0BCA1F3D4B3400650DB7 /* WB_OuathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_OuathViewController.swift; sourceTree = "<group>"; };
 		B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extern.swift"; sourceTree = "<group>"; };
 		B0CCF6161F28ED9A002A9515 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B0CCF6181F28F012002A9515 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = home.storyboard; path = iOS_WB/Class/Home/home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -308,6 +314,8 @@
 		B0AE0B9E1F3D44A900650DB7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B0AE0BC81F3D4AFA00650DB7 /* Ouath.storyboard */,
+				B0AE0BCA1F3D4B3400650DB7 /* WB_OuathViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -330,6 +338,7 @@
 		B0AE0BA51F3D464300650DB7 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				B0AE0BC61F3D4A5E00650DB7 /* WB_Common.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -519,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0CCF6171F28ED9B002A9515 /* Main.storyboard in Resources */,
+				B0AE0BC91F3D4AFA00650DB7 /* Ouath.storyboard in Resources */,
 				B0CCF6211F28F186002A9515 /* Null.storyboard in Resources */,
 				B0CCF6291F28F739002A9515 /* VisiterView.xib in Resources */,
 				B0CCF61B1F28F045002A9515 /* Messager.storyboard in Resources */,
@@ -600,6 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0AE0BC71F3D4A5E00650DB7 /* WB_Common.swift in Sources */,
 				B02CD5EC1F13E06900EE9BA1 /* HomeTableViewController.swift in Sources */,
 				B02CD5F01F13E08900EE9BA1 /* ProfileTableViewController.swift in Sources */,
 				B02CD5B41F13D1C400EE9BA1 /* AppDelegate.swift in Sources */,
@@ -610,6 +621,7 @@
 				B0CCF6151F28E8C7002A9515 /* UIButton+Extern.swift in Sources */,
 				B0CCF6241F28F3CF002A9515 /* Base_TableViewController.swift in Sources */,
 				B02CD5EE1F13E07B00EE9BA1 /* MessageTableViewController.swift in Sources */,
+				B0AE0BCB1F3D4B3400650DB7 /* WB_OuathViewController.swift in Sources */,
 				B02CD5EA1F13E04B00EE9BA1 /* MainTabBarViewController.swift in Sources */,
 				B0CCF6271F28F721002A9515 /* VisiterView.swift in Sources */,
 				B02CD5F21F13E0A600EE9BA1 /* DiscorverTableViewController.swift in Sources */,
