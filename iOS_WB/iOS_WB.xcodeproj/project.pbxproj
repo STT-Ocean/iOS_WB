@@ -24,6 +24,8 @@
 		B0AE0BC71F3D4A5E00650DB7 /* WB_Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE0BC61F3D4A5E00650DB7 /* WB_Common.swift */; };
 		B0AE0BC91F3D4AFA00650DB7 /* Ouath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AE0BC81F3D4AFA00650DB7 /* Ouath.storyboard */; };
 		B0AE0BCB1F3D4B3400650DB7 /* WB_OuathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE0BCA1F3D4B3400650DB7 /* WB_OuathViewController.swift */; };
+		B0AE0BCD1F3D536200650DB7 /* WB_NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE0BCC1F3D536200650DB7 /* WB_NetWorkTools.swift */; };
+		B0AE0BCF1F3D57CA00650DB7 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE0BCE1F3D57CA00650DB7 /* UserAccount.swift */; };
 		B0CCF6151F28E8C7002A9515 /* UIButton+Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */; };
 		B0CCF6171F28ED9B002A9515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6161F28ED9A002A9515 /* Main.storyboard */; };
 		B0CCF6191F28F012002A9515 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6181F28F012002A9515 /* home.storyboard */; };
@@ -79,40 +81,11 @@
 		B06FF1001F2A4720007D4198 /* Title_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title_Button.swift; sourceTree = "<group>"; };
 		B06FF1021F2A52D4007D4198 /* TableViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		B090486A1F35C3B30014999A /* STPresentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPresentManager.swift; sourceTree = "<group>"; };
-		B0AE0BA71F3D464D00650DB7 /* AnyExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyExtensions.swift; sourceTree = "<group>"; };
-		B0AE0BA81F3D464D00650DB7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		B0AE0BA91F3D464D00650DB7 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
-		B0AE0BAA1F3D464D00650DB7 /* DataTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransform.swift; sourceTree = "<group>"; };
-		B0AE0BAB1F3D464D00650DB7 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
-		B0AE0BAC1F3D464D00650DB7 /* DateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
-		B0AE0BAD1F3D464D00650DB7 /* Deserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
-		B0AE0BAE1F3D464D00650DB7 /* EnumTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTransform.swift; sourceTree = "<group>"; };
-		B0AE0BAF1F3D464D00650DB7 /* HandyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandyJSON.h; sourceTree = "<group>"; };
-		B0AE0BB01F3D464D00650DB7 /* HelpingMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpingMapper.swift; sourceTree = "<group>"; };
-		B0AE0BB11F3D464D00650DB7 /* HexColorTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorTransform.swift; sourceTree = "<group>"; };
-		B0AE0BB21F3D464E00650DB7 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		B0AE0BB31F3D464E00650DB7 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
-		B0AE0BB41F3D464E00650DB7 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		B0AE0BB51F3D464E00650DB7 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
-		B0AE0BB61F3D464E00650DB7 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
-		B0AE0BB71F3D464E00650DB7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B0AE0BB81F3D464E00650DB7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		B0AE0BB91F3D464E00650DB7 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
-		B0AE0BBA1F3D464E00650DB7 /* NominalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominalType.swift; sourceTree = "<group>"; };
-		B0AE0BBB1F3D464E00650DB7 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
-		B0AE0BBC1F3D464E00650DB7 /* OtherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherExtension.swift; sourceTree = "<group>"; };
-		B0AE0BBD1F3D464E00650DB7 /* PointerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerType.swift; sourceTree = "<group>"; };
-		B0AE0BBE1F3D464E00650DB7 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
-		B0AE0BBF1F3D464E00650DB7 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
-		B0AE0BC01F3D464E00650DB7 /* ReflectionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionHelper.swift; sourceTree = "<group>"; };
-		B0AE0BC11F3D464E00650DB7 /* Serializer+Legacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Serializer+Legacy.swift"; sourceTree = "<group>"; };
-		B0AE0BC21F3D464E00650DB7 /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
-		B0AE0BC31F3D464E00650DB7 /* TransformOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
-		B0AE0BC41F3D464E00650DB7 /* TransformType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
-		B0AE0BC51F3D464E00650DB7 /* URLTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
 		B0AE0BC61F3D4A5E00650DB7 /* WB_Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_Common.swift; sourceTree = "<group>"; };
 		B0AE0BC81F3D4AFA00650DB7 /* Ouath.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ouath.storyboard; sourceTree = "<group>"; };
 		B0AE0BCA1F3D4B3400650DB7 /* WB_OuathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_OuathViewController.swift; sourceTree = "<group>"; };
+		B0AE0BCC1F3D536200650DB7 /* WB_NetWorkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_NetWorkTools.swift; sourceTree = "<group>"; };
+		B0AE0BCE1F3D57CA00650DB7 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extern.swift"; sourceTree = "<group>"; };
 		B0CCF6161F28ED9A002A9515 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B0CCF6181F28F012002A9515 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = home.storyboard; path = iOS_WB/Class/Home/home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -316,6 +289,7 @@
 			children = (
 				B0AE0BC81F3D4AFA00650DB7 /* Ouath.storyboard */,
 				B0AE0BCA1F3D4B3400650DB7 /* WB_OuathViewController.swift */,
+				B0AE0BCE1F3D57CA00650DB7 /* UserAccount.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -323,7 +297,6 @@
 		B0AE0BA31F3D460500650DB7 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				B0AE0BA61F3D464D00650DB7 /* Source */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -331,6 +304,7 @@
 		B0AE0BA41F3D460C00650DB7 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				B0AE0BCC1F3D536200650DB7 /* WB_NetWorkTools.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -341,44 +315,6 @@
 				B0AE0BC61F3D4A5E00650DB7 /* WB_Common.swift */,
 			);
 			path = Global;
-			sourceTree = "<group>";
-		};
-		B0AE0BA61F3D464D00650DB7 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				B0AE0BA71F3D464D00650DB7 /* AnyExtensions.swift */,
-				B0AE0BA81F3D464D00650DB7 /* Configuration.swift */,
-				B0AE0BA91F3D464D00650DB7 /* CustomDateFormatTransform.swift */,
-				B0AE0BAA1F3D464D00650DB7 /* DataTransform.swift */,
-				B0AE0BAB1F3D464D00650DB7 /* DateFormatterTransform.swift */,
-				B0AE0BAC1F3D464D00650DB7 /* DateTransform.swift */,
-				B0AE0BAD1F3D464D00650DB7 /* Deserializer.swift */,
-				B0AE0BAE1F3D464D00650DB7 /* EnumTransform.swift */,
-				B0AE0BAF1F3D464D00650DB7 /* HandyJSON.h */,
-				B0AE0BB01F3D464D00650DB7 /* HelpingMapper.swift */,
-				B0AE0BB11F3D464D00650DB7 /* HexColorTransform.swift */,
-				B0AE0BB21F3D464E00650DB7 /* Info-iOS.plist */,
-				B0AE0BB31F3D464E00650DB7 /* Info-macOS.plist */,
-				B0AE0BB41F3D464E00650DB7 /* Info-tvOS.plist */,
-				B0AE0BB51F3D464E00650DB7 /* Info-watchOS.plist */,
-				B0AE0BB61F3D464E00650DB7 /* ISO8601DateTransform.swift */,
-				B0AE0BB71F3D464E00650DB7 /* LICENSE */,
-				B0AE0BB81F3D464E00650DB7 /* Logger.swift */,
-				B0AE0BB91F3D464E00650DB7 /* Metadata.swift */,
-				B0AE0BBA1F3D464E00650DB7 /* NominalType.swift */,
-				B0AE0BBB1F3D464E00650DB7 /* NSDecimalNumberTransform.swift */,
-				B0AE0BBC1F3D464E00650DB7 /* OtherExtension.swift */,
-				B0AE0BBD1F3D464E00650DB7 /* PointerType.swift */,
-				B0AE0BBE1F3D464E00650DB7 /* Properties.swift */,
-				B0AE0BBF1F3D464E00650DB7 /* Protocol.swift */,
-				B0AE0BC01F3D464E00650DB7 /* ReflectionHelper.swift */,
-				B0AE0BC11F3D464E00650DB7 /* Serializer+Legacy.swift */,
-				B0AE0BC21F3D464E00650DB7 /* Serializer.swift */,
-				B0AE0BC31F3D464E00650DB7 /* TransformOf.swift */,
-				B0AE0BC41F3D464E00650DB7 /* TransformType.swift */,
-				B0AE0BC51F3D464E00650DB7 /* URLTransform.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		B0BE1E141F359AE300E3ADC1 /* PopView */ = {
@@ -614,6 +550,7 @@
 				B02CD5EC1F13E06900EE9BA1 /* HomeTableViewController.swift in Sources */,
 				B02CD5F01F13E08900EE9BA1 /* ProfileTableViewController.swift in Sources */,
 				B02CD5B41F13D1C400EE9BA1 /* AppDelegate.swift in Sources */,
+				B0AE0BCF1F3D57CA00650DB7 /* UserAccount.swift in Sources */,
 				B0EC9C811F35ADEA0094607A /* PopView_ViewController.swift in Sources */,
 				B090486B1F35C3B30014999A /* STPresentManager.swift in Sources */,
 				B06FF0FF1F2A4146007D4198 /* UIBarButtonItem+Exten.swift in Sources */,
@@ -626,6 +563,7 @@
 				B0CCF6271F28F721002A9515 /* VisiterView.swift in Sources */,
 				B02CD5F21F13E0A600EE9BA1 /* DiscorverTableViewController.swift in Sources */,
 				B06FF1031F2A52D4007D4198 /* TableViewController+NavigationBar.swift in Sources */,
+				B0AE0BCD1F3D536200650DB7 /* WB_NetWorkTools.swift in Sources */,
 				B06FF1011F2A4720007D4198 /* Title_Button.swift in Sources */,
 				B0EF01CF1F167F3E006BBF24 /* NullViewController.swift in Sources */,
 			);
