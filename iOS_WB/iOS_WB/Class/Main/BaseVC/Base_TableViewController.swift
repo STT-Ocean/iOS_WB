@@ -10,7 +10,7 @@ import UIKit
 
 
 class Base_TableViewController: UITableViewController {
-    var isLogin  = true
+    var isLogin  = false
     var visiterView :VisiterView?
     
     override func loadView() {
@@ -36,8 +36,6 @@ class Base_TableViewController: UITableViewController {
     }
     
     // MARK : - visiterView 的代理方法
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
