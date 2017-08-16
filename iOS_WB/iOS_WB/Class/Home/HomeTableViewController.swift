@@ -15,6 +15,7 @@ class HomeTableViewController: Base_TableViewController {
         setUpNavigationItem()
         NotificationCenter.default.addObserver(self, selector: #selector(titleButtonAction), name: NSNotification.Name(STPresentManagerDidDismisstedController), object: animatorManager)
         NotificationCenter.default.addObserver(self, selector: #selector(titleButtonAction), name: Notification.Name(STPresentManagerDidPresentedController), object: animatorManager)
+        
     }
     
     

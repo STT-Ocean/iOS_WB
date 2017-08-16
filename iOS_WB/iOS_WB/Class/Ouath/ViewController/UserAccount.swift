@@ -8,23 +8,28 @@
 
 import UIKit
 
+
+
 class UserAccount: HandyJSON {
     
     var access_token : String?
-    var expires_in : String?
+    var  expires_in : Int = 0
     var  remind_in : String?
     var  uid : String?
     
+    
     required init() {
-        
     }
-//    init(dict: [String : Any]) {
+    
+//     init(dict : [String : Any]) {
 //        super.init()
-//
-//        setValuesForKeys(dict)
+//        self.setValuesForKeys(dict)
 //    }
 //
-    
-    
-    
+//    override func setValue(_ value: Any?, forKey key: String) {
+//        super.setValue(value, forKey: key)
+//    }
+//    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+//
+//    }
 }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+
 
 class WB_OuathViewController: UIViewController {
 
@@ -20,7 +22,6 @@ class WB_OuathViewController: UIViewController {
         }
         webView.loadRequest(URLRequest.init(url: url))
     }
-    
 }
 
 extension WB_OuathViewController : UIWebViewDelegate{
@@ -37,7 +38,7 @@ extension WB_OuathViewController : UIWebViewDelegate{
         STLog(message: "是授权回掉页面")
         let query = request.url?.query // 可以获得参数
         let code = query?.components(separatedBy: "=").last
-       getAccessToken(code: code)
+        getAccessToken(code: code)
         
         return  false
     }
@@ -55,15 +56,19 @@ extension WB_OuathViewController : UIWebViewDelegate{
         WB_NetWorkTools.shareInstance.post(WB_GetAccess_token, parameters: para, progress: { (progerss: Progress) in
             
         }, success: { (task: URLSessionDataTask, dict : Any?) in
+            if (dict == nil){
+                return
+            }
+            let sjond = JSON.init(dict!) 
+            guard let myDict = sjond.dictionaryObject  else {
+                return
+            }
             
-            
-//            let userAccount = UserAccount.deserialize(from: dictOpe )
+//            let userAccount = UserAccount.deserialize(from: myDict)
             
         }) { (task: URLSessionDataTask?, error : Error) in
             
         }
-        
-        
     }
     
 }

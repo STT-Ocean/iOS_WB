@@ -14,13 +14,16 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - SwiftyJSON (~> 3.1.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 9cebf01c71fac313aa4604471a06843ab163e1bb
+PODFILE CHECKSUM: 7b27ac38125a1f6da6bc1308012619c4471f194b
 
 COCOAPODS: 1.2.1
