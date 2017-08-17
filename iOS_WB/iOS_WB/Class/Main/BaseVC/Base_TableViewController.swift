@@ -10,7 +10,7 @@ import UIKit
 
 
 class Base_TableViewController: UITableViewController {
-    var isLogin  = false
+    var isLogin  = UserAccount.isLogin()
     var visiterView :VisiterView?
     
     override func loadView() {

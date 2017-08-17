@@ -14,6 +14,10 @@ class WB_NetWorkTools: AFHTTPSessionManager {
     
     static let shareInstance:WB_NetWorkTools = {
         let manager =  WB_NetWorkTools.init(baseURL: URL.init(string: WB_Base_url), sessionConfiguration: URLSessionConfiguration.default)
+        
+        var sets = NSSet.init(array: ["application/json","text/plain","text/javascript"])
+        // 告诉AFN 需要进行支持textPlain的类型数据
+        manager.responseSerializer.acceptableContentTypes =  sets as? Set<String>
         return manager
     }()
 }

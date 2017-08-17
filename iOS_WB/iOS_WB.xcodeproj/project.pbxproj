@@ -62,6 +62,7 @@
 		B0CCF6241F28F3CF002A9515 /* Base_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6231F28F3CF002A9515 /* Base_TableViewController.swift */; };
 		B0CCF6271F28F721002A9515 /* VisiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6261F28F721002A9515 /* VisiterView.swift */; };
 		B0CCF6291F28F739002A9515 /* VisiterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6281F28F739002A9515 /* VisiterView.xib */; };
+		B0DE3BC11F453FED00AEB3D7 /* String+Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */; };
 		B0EC9C7D1F359F6E0094607A /* PopView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EC9C7C1F359F6E0094607A /* PopView.storyboard */; };
 		B0EC9C7F1F35A56A0094607A /* STPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC9C7E1F35A56A0094607A /* STPresentationController.swift */; };
 		B0EC9C811F35ADEA0094607A /* PopView_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC9C801F35ADEA0094607A /* PopView_ViewController.swift */; };
@@ -150,6 +151,7 @@
 		B0CCF6231F28F3CF002A9515 /* Base_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_TableViewController.swift; sourceTree = "<group>"; };
 		B0CCF6261F28F721002A9515 /* VisiterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisiterView.swift; sourceTree = "<group>"; };
 		B0CCF6281F28F739002A9515 /* VisiterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisiterView.xib; sourceTree = "<group>"; };
+		B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extern.swift"; sourceTree = "<group>"; };
 		B0EC9C7C1F359F6E0094607A /* PopView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopView.storyboard; sourceTree = "<group>"; };
 		B0EC9C7E1F35A56A0094607A /* STPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPresentationController.swift; sourceTree = "<group>"; };
 		B0EC9C801F35ADEA0094607A /* PopView_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopView_ViewController.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				B06FF0FE1F2A4146007D4198 /* UIBarButtonItem+Exten.swift */,
 				B06FF1001F2A4720007D4198 /* Title_Button.swift */,
 				B06FF1021F2A52D4007D4198 /* TableViewController+NavigationBar.swift */,
+				B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 				B03CB5AA1F3D7D5B006BE735 /* PointerType.swift in Sources */,
 				B0CCF6271F28F721002A9515 /* VisiterView.swift in Sources */,
 				B03CB5B11F3D7D5B006BE735 /* TransformType.swift in Sources */,
+				B0DE3BC11F453FED00AEB3D7 /* String+Extern.swift in Sources */,
 				B03CB5991F3D7D5B006BE735 /* DateFormatterTransform.swift in Sources */,
 				B03CB5A81F3D7D5B006BE735 /* NSDecimalNumberTransform.swift in Sources */,
 				B02CD5F21F13E0A600EE9BA1 /* DiscorverTableViewController.swift in Sources */,

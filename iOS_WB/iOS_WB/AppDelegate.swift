@@ -18,12 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    // 在swift 中是没有宏定义的
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        // 1 创建window
-//        window = UIWindow.init(frame: UIScreen.main.bounds)
-//        window?.backgroundColor = UIColor.white
-//        window?.rootViewController = MainTabBarViewController()
-//        
-//        window?.makeKeyAndVisible()
         UINavigationBar.appearance().tintColor = UIColor.orange
         return true
     }

@@ -16,5 +16,6 @@ let WB_Base_url = "https://api.weibo.com/"
 
 let WB_GetAccess_token = "oauth2/access_token"
 
-
+// 获取用户信息
+let WB_GetUserInfo_url = "2/users/show.json"
 
