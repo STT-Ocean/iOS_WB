@@ -66,6 +66,7 @@
 		B0CCF6241F28F3CF002A9515 /* Base_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6231F28F3CF002A9515 /* Base_TableViewController.swift */; };
 		B0CCF6271F28F721002A9515 /* VisiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6261F28F721002A9515 /* VisiterView.swift */; };
 		B0CCF6291F28F739002A9515 /* VisiterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6281F28F739002A9515 /* VisiterView.xib */; };
+		B0DDCC121F468E7900B29B8C /* Home_StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDCC111F468E7900B29B8C /* Home_StatusCell.swift */; };
 		B0DE3BC11F453FED00AEB3D7 /* String+Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */; };
 		B0EF01CE1F167F3E006BBF24 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */; };
 		B0EF01CF1F167F3E006BBF24 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */; };
@@ -156,6 +157,7 @@
 		B0CCF6231F28F3CF002A9515 /* Base_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_TableViewController.swift; sourceTree = "<group>"; };
 		B0CCF6261F28F721002A9515 /* VisiterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisiterView.swift; sourceTree = "<group>"; };
 		B0CCF6281F28F739002A9515 /* VisiterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisiterView.xib; sourceTree = "<group>"; };
+		B0DDCC111F468E7900B29B8C /* Home_StatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_StatusCell.swift; sourceTree = "<group>"; };
 		B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extern.swift"; sourceTree = "<group>"; };
 		B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 		B02CD5E41F13DFD400EE9BA1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B0DDCC101F468E6200B29B8C /* View */,
 				B0506B4E1F4588E40056B391 /* Model */,
 				B0506B491F4588D50056B391 /* PopView */,
 				B0CCF6181F28F012002A9515 /* home.storyboard */,
@@ -445,6 +448,14 @@
 			children = (
 				B0CCF6261F28F721002A9515 /* VisiterView.swift */,
 				B0CCF6281F28F739002A9515 /* VisiterView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0DDCC101F468E6200B29B8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0DDCC111F468E7900B29B8C /* Home_StatusCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -695,6 +706,7 @@
 				B0506B501F45890B0056B391 /* WB_Status.swift in Sources */,
 				B02CD5F21F13E0A600EE9BA1 /* DiscorverTableViewController.swift in Sources */,
 				B06FF1031F2A52D4007D4198 /* TableViewController+NavigationBar.swift in Sources */,
+				B0DDCC121F468E7900B29B8C /* Home_StatusCell.swift in Sources */,
 				B0AE0BCD1F3D536200650DB7 /* WB_NetWorkTools.swift in Sources */,
 				B06FF1011F2A4720007D4198 /* Title_Button.swift in Sources */,
 				B0EF01CF1F167F3E006BBF24 /* NullViewController.swift in Sources */,
