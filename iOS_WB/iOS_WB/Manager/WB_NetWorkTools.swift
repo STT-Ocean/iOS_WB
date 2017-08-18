@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import SwiftyJSON
 
 
 class WB_NetWorkTools: AFHTTPSessionManager {
@@ -20,4 +21,25 @@ class WB_NetWorkTools: AFHTTPSessionManager {
         manager.responseSerializer.acceptableContentTypes =  sets as? Set<String>
         return manager
     }()
+    
+    
+   // MARK :
+    func getHomeUserData(completion: @escaping (_ status:Array <WB_Status> ,_ error :Error?) -> ()){
+        let userAccount = UserAccount.loadUserAccount()
+        assert(userAccount?.access_token != nil,"需要授权")
+        let para = ["access_token":userAccount?.access_token]
+        self.get(WB_GetHome_timeLine_url, parameters: para, progress: { (progress) in
+            
+        }, success: { (task , object) in
+            if object == nil {
+                return
+            }
+            let obj = JSON.init(object as Any)
+            let resData = obj["statuses"]
+            let statusArray = [WB_Status].deserialize(from:resData.arrayObject! as NSArray )
+            completion(statusArray! as! Array<WB_Status>,nil)
+        }) { (task , error ) in
+        }
+    }
+    
 }

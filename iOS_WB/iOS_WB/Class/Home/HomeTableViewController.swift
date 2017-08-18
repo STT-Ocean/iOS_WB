@@ -8,19 +8,21 @@
 // swift 中有dealloc 的方法吗？ 在哪里进行移除
 import UIKit
 
+
 class HomeTableViewController: Base_TableViewController {
+    private var  dataArray : Array<WB_Status> = []
     override func viewDidLoad() {
         super.viewDidLoad()
         visiterView?.setUpVisitorInfo(imageName: nil, title: "这里是首页，欢迎来到首页")
         setUpNavigationItem()
         NotificationCenter.default.addObserver(self, selector: #selector(titleButtonAction), name: NSNotification.Name(STPresentManagerDidDismisstedController), object: animatorManager)
         NotificationCenter.default.addObserver(self, selector: #selector(titleButtonAction), name: Notification.Name(STPresentManagerDidPresentedController), object: animatorManager)
-        let filePass = "userAccount.plist".docDir()
-        STLog(message: filePass)
+        
+        WB_NetWorkTools.shareInstance.getHomeUserData { (status, error ) in
+            
+            STLog(message: status)
+        }
     }
-    
-    
-    
     private func setUpNavigationItem(){
         setNavigationControllerBarLeftItemAndRightItem(leftImageName: "navigationbar_friendattention", rightImageName: "navigationbar_pop")
         // 添加导航条按钮
@@ -76,5 +78,12 @@ class HomeTableViewController: Base_TableViewController {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
+}
+
+extension HomeTableViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArray.count
+    }
+    
 }
 

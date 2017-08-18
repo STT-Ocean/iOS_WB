@@ -55,13 +55,20 @@ extension WB_OuathViewController : UIWebViewDelegate{
         
         WB_NetWorkTools.shareInstance.post(WB_GetAccess_token, parameters: para, progress: { (progerss: Progress) in
             
-            
         }, success: { (task: URLSessionDataTask, objec : Any?) in
             
             let sjond = JSON.init(objec )
             let dict = sjond.dictionaryObject! as NSDictionary
             let userAccount = UserAccount.deserialize(from: dict)
-           
+            userAccount?.loadUserInfo(completion: { (userAccount , error ) in
+                if userAccount == nil {
+                    return
+                }
+                userAccount.saveUserAccount()
+                self.dismiss(animated: true, completion: {
+                    
+                })
+            })
             
         }) { (task: URLSessionDataTask?, error : Error) in
             

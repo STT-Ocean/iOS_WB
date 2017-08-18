@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AE424FF339BF63EF200112C1 /* Pods_iOS_WB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C91ECE9364BBA2145B2588 /* Pods_iOS_WB.framework */; };
+		B02C635E1F458F2B00533679 /* PopView_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0506B4B1F4588D50056B391 /* PopView_ViewController.swift */; };
+		B02C635F1F458F2B00533679 /* STPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0506B4C1F4588D50056B391 /* STPresentationController.swift */; };
+		B02C63601F458F2B00533679 /* STPresentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0506B4D1F4588D50056B391 /* STPresentManager.swift */; };
+		B02C63611F458F3300533679 /* PopView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0506B4A1F4588D50056B391 /* PopView.storyboard */; };
 		B02CD5B41F13D1C400EE9BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02CD5B31F13D1C400EE9BA1 /* AppDelegate.swift */; };
 		B02CD5BB1F13D1C400EE9BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02CD5BA1F13D1C400EE9BA1 /* Assets.xcassets */; };
 		B02CD5C91F13D1C400EE9BA1 /* iOS_WBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02CD5C81F13D1C400EE9BA1 /* iOS_WBTests.swift */; };
@@ -43,10 +47,10 @@
 		B03CB5B01F3D7D5B006BE735 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03CB5921F3D7D5B006BE735 /* TransformOf.swift */; };
 		B03CB5B11F3D7D5B006BE735 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03CB5931F3D7D5B006BE735 /* TransformType.swift */; };
 		B03CB5B21F3D7D5B006BE735 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03CB5941F3D7D5B006BE735 /* URLTransform.swift */; };
+		B0506B501F45890B0056B391 /* WB_Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0506B4F1F45890B0056B391 /* WB_Status.swift */; };
 		B06FF0FF1F2A4146007D4198 /* UIBarButtonItem+Exten.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FF0FE1F2A4146007D4198 /* UIBarButtonItem+Exten.swift */; };
 		B06FF1011F2A4720007D4198 /* Title_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FF1001F2A4720007D4198 /* Title_Button.swift */; };
 		B06FF1031F2A52D4007D4198 /* TableViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FF1021F2A52D4007D4198 /* TableViewController+NavigationBar.swift */; };
-		B090486B1F35C3B30014999A /* STPresentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B090486A1F35C3B30014999A /* STPresentManager.swift */; };
 		B0AE0BC71F3D4A5E00650DB7 /* WB_Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE0BC61F3D4A5E00650DB7 /* WB_Common.swift */; };
 		B0AE0BC91F3D4AFA00650DB7 /* Ouath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AE0BC81F3D4AFA00650DB7 /* Ouath.storyboard */; };
 		B0AE0BCB1F3D4B3400650DB7 /* WB_OuathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE0BCA1F3D4B3400650DB7 /* WB_OuathViewController.swift */; };
@@ -63,9 +67,6 @@
 		B0CCF6271F28F721002A9515 /* VisiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF6261F28F721002A9515 /* VisiterView.swift */; };
 		B0CCF6291F28F739002A9515 /* VisiterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6281F28F739002A9515 /* VisiterView.xib */; };
 		B0DE3BC11F453FED00AEB3D7 /* String+Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */; };
-		B0EC9C7D1F359F6E0094607A /* PopView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EC9C7C1F359F6E0094607A /* PopView.storyboard */; };
-		B0EC9C7F1F35A56A0094607A /* STPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC9C7E1F35A56A0094607A /* STPresentationController.swift */; };
-		B0EC9C811F35ADEA0094607A /* PopView_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC9C801F35ADEA0094607A /* PopView_ViewController.swift */; };
 		B0EF01CE1F167F3E006BBF24 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */; };
 		B0EF01CF1F167F3E006BBF24 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */; };
 /* End PBXBuildFile section */
@@ -131,10 +132,14 @@
 		B03CB5921F3D7D5B006BE735 /* TransformOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
 		B03CB5931F3D7D5B006BE735 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
 		B03CB5941F3D7D5B006BE735 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		B0506B4A1F4588D50056B391 /* PopView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopView.storyboard; sourceTree = "<group>"; };
+		B0506B4B1F4588D50056B391 /* PopView_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopView_ViewController.swift; sourceTree = "<group>"; };
+		B0506B4C1F4588D50056B391 /* STPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPresentationController.swift; sourceTree = "<group>"; };
+		B0506B4D1F4588D50056B391 /* STPresentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPresentManager.swift; sourceTree = "<group>"; };
+		B0506B4F1F45890B0056B391 /* WB_Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_Status.swift; sourceTree = "<group>"; };
 		B06FF0FE1F2A4146007D4198 /* UIBarButtonItem+Exten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Exten.swift"; sourceTree = "<group>"; };
 		B06FF1001F2A4720007D4198 /* Title_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title_Button.swift; sourceTree = "<group>"; };
 		B06FF1021F2A52D4007D4198 /* TableViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewController+NavigationBar.swift"; sourceTree = "<group>"; };
-		B090486A1F35C3B30014999A /* STPresentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPresentManager.swift; sourceTree = "<group>"; };
 		B0AE0BC61F3D4A5E00650DB7 /* WB_Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_Common.swift; sourceTree = "<group>"; };
 		B0AE0BC81F3D4AFA00650DB7 /* Ouath.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ouath.storyboard; sourceTree = "<group>"; };
 		B0AE0BCA1F3D4B3400650DB7 /* WB_OuathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_OuathViewController.swift; sourceTree = "<group>"; };
@@ -152,9 +157,6 @@
 		B0CCF6261F28F721002A9515 /* VisiterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisiterView.swift; sourceTree = "<group>"; };
 		B0CCF6281F28F739002A9515 /* VisiterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisiterView.xib; sourceTree = "<group>"; };
 		B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extern.swift"; sourceTree = "<group>"; };
-		B0EC9C7C1F359F6E0094607A /* PopView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopView.storyboard; sourceTree = "<group>"; };
-		B0EC9C7E1F35A56A0094607A /* STPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPresentationController.swift; sourceTree = "<group>"; };
-		B0EC9C801F35ADEA0094607A /* PopView_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopView_ViewController.swift; sourceTree = "<group>"; };
 		B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 		E988EBB233336ECD5587986A /* Pods-iOS_WB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_WB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_WB/Pods-iOS_WB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -284,7 +286,8 @@
 		B02CD5E41F13DFD400EE9BA1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B0BE1E141F359AE300E3ADC1 /* PopView */,
+				B0506B4E1F4588E40056B391 /* Model */,
+				B0506B491F4588D50056B391 /* PopView */,
 				B0CCF6181F28F012002A9515 /* home.storyboard */,
 				B02CD5EB1F13E06900EE9BA1 /* HomeTableViewController.swift */,
 			);
@@ -368,6 +371,25 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		B0506B491F4588D50056B391 /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				B0506B4A1F4588D50056B391 /* PopView.storyboard */,
+				B0506B4B1F4588D50056B391 /* PopView_ViewController.swift */,
+				B0506B4C1F4588D50056B391 /* STPresentationController.swift */,
+				B0506B4D1F4588D50056B391 /* STPresentManager.swift */,
+			);
+			path = PopView;
+			sourceTree = "<group>";
+		};
+		B0506B4E1F4588E40056B391 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0506B4F1F45890B0056B391 /* WB_Status.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B0AE0B9D1F3D44A900650DB7 /* Ouath */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,17 +430,6 @@
 				B0AE0BC61F3D4A5E00650DB7 /* WB_Common.swift */,
 			);
 			path = Global;
-			sourceTree = "<group>";
-		};
-		B0BE1E141F359AE300E3ADC1 /* PopView */ = {
-			isa = PBXGroup;
-			children = (
-				B0EC9C7C1F359F6E0094607A /* PopView.storyboard */,
-				B0EC9C7E1F35A56A0094607A /* STPresentationController.swift */,
-				B0EC9C801F35ADEA0094607A /* PopView_ViewController.swift */,
-				B090486A1F35C3B30014999A /* STPresentManager.swift */,
-			);
-			path = PopView;
 			sourceTree = "<group>";
 		};
 		B0CCF6221F28F3B8002A9515 /* BaseVC */ = {
@@ -556,6 +567,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02C63611F458F3300533679 /* PopView.storyboard in Resources */,
 				B0CCF6171F28ED9B002A9515 /* Main.storyboard in Resources */,
 				B0AE0BC91F3D4AFA00650DB7 /* Ouath.storyboard in Resources */,
 				B0CCF6211F28F186002A9515 /* Null.storyboard in Resources */,
@@ -565,7 +577,6 @@
 				B03CB5A41F3D7D5B006BE735 /* LICENSE in Resources */,
 				B0EF01CE1F167F3E006BBF24 /* MainVCSettings.json in Resources */,
 				B02CD5BB1F13D1C400EE9BA1 /* Assets.xcassets in Resources */,
-				B0EC9C7D1F359F6E0094607A /* PopView.storyboard in Resources */,
 				B0CCF61F1F28F171002A9515 /* Profile.storyboard in Resources */,
 				B0CCF6191F28F012002A9515 /* home.storyboard in Resources */,
 			);
@@ -640,6 +651,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02C635E1F458F2B00533679 /* PopView_ViewController.swift in Sources */,
+				B02C635F1F458F2B00533679 /* STPresentationController.swift in Sources */,
+				B02C63601F458F2B00533679 /* STPresentManager.swift in Sources */,
 				B0AE0BC71F3D4A5E00650DB7 /* WB_Common.swift in Sources */,
 				B03CB5A31F3D7D5B006BE735 /* ISO8601DateTransform.swift in Sources */,
 				B03CB5A91F3D7D5B006BE735 /* OtherExtension.swift in Sources */,
@@ -655,10 +669,7 @@
 				B03CB59A1F3D7D5B006BE735 /* DateTransform.swift in Sources */,
 				B0AE0BCF1F3D57CA00650DB7 /* UserAccount.swift in Sources */,
 				B03CB5AC1F3D7D5B006BE735 /* Protocol.swift in Sources */,
-				B0EC9C811F35ADEA0094607A /* PopView_ViewController.swift in Sources */,
-				B090486B1F35C3B30014999A /* STPresentManager.swift in Sources */,
 				B06FF0FF1F2A4146007D4198 /* UIBarButtonItem+Exten.swift in Sources */,
-				B0EC9C7F1F35A56A0094607A /* STPresentationController.swift in Sources */,
 				B03CB5961F3D7D5B006BE735 /* Configuration.swift in Sources */,
 				B03CB5B21F3D7D5B006BE735 /* URLTransform.swift in Sources */,
 				B03CB5AD1F3D7D5B006BE735 /* ReflectionHelper.swift in Sources */,
@@ -681,6 +692,7 @@
 				B0DE3BC11F453FED00AEB3D7 /* String+Extern.swift in Sources */,
 				B03CB5991F3D7D5B006BE735 /* DateFormatterTransform.swift in Sources */,
 				B03CB5A81F3D7D5B006BE735 /* NSDecimalNumberTransform.swift in Sources */,
+				B0506B501F45890B0056B391 /* WB_Status.swift in Sources */,
 				B02CD5F21F13E0A600EE9BA1 /* DiscorverTableViewController.swift in Sources */,
 				B06FF1031F2A52D4007D4198 /* TableViewController+NavigationBar.swift in Sources */,
 				B0AE0BCD1F3D536200650DB7 /* WB_NetWorkTools.swift in Sources */,

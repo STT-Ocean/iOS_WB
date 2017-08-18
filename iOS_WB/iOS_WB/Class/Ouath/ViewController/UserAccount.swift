@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AFNetworking
 
 private  let USERINFOKEY = "USERINFOKEY"
 
@@ -47,29 +46,26 @@ class UserAccount: NSObject,HandyJSON ,NSCoding{
         guard  let userAccount = NSKeyedUnarchiver.unarchiveObject(withFile: UserAccount.filePass) as? UserAccount else {
             return UserAccount.account
         }
-    // 判断是否过期
-        guard  let  date = userAccount.expires_data else {
-             return UserAccount.account
-        }
+    
     // 授权过期处理
         UserAccount.account = userAccount
         return  UserAccount.account
     }
     
     class func isLogin() -> Bool {
+        
         return UserAccount.loadUserAccount() != nil
     }
     
-    func loadUserInfo( ) {
+    // swift 4.0 这个地方block的返回值有不同之处
+    func loadUserInfo(completion : @escaping ( _ userAccount : UserAccount,_ error :Error) -> Swift.Void ) {
         
         assert(access_token != nil, "使用该方法必须先授权")
         assert(uid != nil, "使用该方法必须要先授权")
         let para = ["access_token":access_token!,
                     "uid":uid!]
-    
-        
         WB_NetWorkTools.shareInstance.get(WB_GetUserInfo_url, parameters: para, progress: { (progress ) in
-            STLog(message: progress)
+            
         }, success: { (task , object ) in
             if object == nil {
                 return
@@ -77,15 +73,15 @@ class UserAccount: NSObject,HandyJSON ,NSCoding{
             guard let obj = object as? [String : Any] else {
                 return
             }
-            self.avatar_large = obj["screen_name"] as? String
-            self.screen_name = obj["avatar_large"] as? String
-//            fininsh(self,nil)
-            
+            let err = NSError.init(domain: "haha", code: 10000, userInfo: nil) as  Error
+            self.avatar_large = obj["avatar_large"] as? String
+            self.screen_name = obj["screen_name"] as? String
+            completion(self ,err);
+            // swift 4 不能够返回nil
         }) { (task , error ) in
-//            fininsh(nil,error)
+            // 一旦error 返回则出现问题 原因不明
         }
     }
-    
     
     
     

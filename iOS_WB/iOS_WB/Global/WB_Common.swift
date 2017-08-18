@@ -19,3 +19,5 @@ let WB_GetAccess_token = "oauth2/access_token"
 // 获取用户信息
 let WB_GetUserInfo_url = "2/users/show.json"
 
+let WB_GetHome_timeLine_url = "2/statuses/home_timeline.json"
+
