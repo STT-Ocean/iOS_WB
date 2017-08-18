@@ -38,7 +38,7 @@ class Home_StatusCell: UITableViewCell {
                     name = "avatar_vgirl"
                 }
             }
-        
+            
             if let rank = status?.user?.mbrank {
                 if rank >= 1 && rank < 6 {
                    vipImage.image = UIImage.init(named: "common_icon_membership_level\(rank)")
@@ -51,9 +51,18 @@ class Home_StatusCell: UITableViewCell {
             
             enterPrise.image = UIImage.init(named: name!)
             nickName.text = status?.user?.screen_name
-            source.text = status?.source
-            timeLabel.text = status?.created_at
+            
+            timeLabel.text = "刚刚"
             contentLabel.text  = status?.text
+            
+            if let sourceString : NSString = status?.source! as NSString? {
+                let startIndex = sourceString.range(of: ">").location + 1
+//                let endIndex = sourceString.range(of: "</").location
+                let endIndex = sourceString.range(of: "<", options: NSString.CompareOptions.backwards).location
+                // 倒序查找
+                let sour = sourceString.substring(with: NSMakeRange(startIndex, endIndex - startIndex))
+                source.text = sour
+            }
         }
     }
     
