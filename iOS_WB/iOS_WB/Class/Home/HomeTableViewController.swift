@@ -8,9 +8,15 @@
 // swift 中有dealloc 的方法吗？ 在哪里进行移除
 import UIKit
 
-
 class HomeTableViewController: Base_TableViewController {
-    private var  dataArray : Array<WB_Status> = []
+    private var  dataArray : Array<WB_Status> = [] // 数组可以使用这种方法进行初始化
+    {
+        didSet{
+            // didSet 方法
+        }
+    }
+//    var dataArray :[WB_Status]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         visiterView?.setUpVisitorInfo(imageName: nil, title: "这里是首页，欢迎来到首页")
@@ -19,8 +25,9 @@ class HomeTableViewController: Base_TableViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(titleButtonAction), name: Notification.Name(STPresentManagerDidPresentedController), object: animatorManager)
         
         WB_NetWorkTools.shareInstance.getHomeUserData { (status, error ) in
+            self.dataArray = status
+            self.tableView.reloadData()
             
-            STLog(message: status)
         }
     }
     private func setUpNavigationItem(){
@@ -82,8 +89,12 @@ class HomeTableViewController: Base_TableViewController {
 
 extension HomeTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArray.count
+        return self.dataArray.count 
     }
-    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Home_StatusCell", for: indexPath) as! Home_StatusCell
+        cell.status = self.dataArray[indexPath.row]
+        return cell
+    }
 }
 

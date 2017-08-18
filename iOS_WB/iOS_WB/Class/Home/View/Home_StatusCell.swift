@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class Home_StatusCell: UITableViewCell {
     
@@ -20,12 +21,34 @@ class Home_StatusCell: UITableViewCell {
     
     var status : WB_Status?{
         didSet{
-            
+            if let urlStr = status?.user?.profile_image_url {
+                iconImage.sd_setImage(with: URL.init(string: urlStr))
+            }
+            var name : String?
+            // 需要注意的是 swift switch 语句其他有很多不同之处，不需要break
+            if  let avatarCae = status?.user?.verified_type  {
+                switch  avatarCae {
+                case 0:
+                    name = "avatar_vip"
+                    case 2,3,5 :
+                        name = "avatar_enterprise_vip"
+                    case 220 :
+                        name = "avatar_grassroot"
+                default:
+                    name = "avatar_vgirl"
+                }
+            }
+            enterPrise.image = UIImage.init(named: name!)
+            nickName.text = status?.user?.screen_name
+            source.text = status?.source
+            timeLabel.text = status?.created_at
+            contentLabel.text  = status?.text
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         
     }
 
