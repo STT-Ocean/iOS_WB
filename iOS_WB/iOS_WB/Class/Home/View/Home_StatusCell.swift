@@ -38,6 +38,17 @@ class Home_StatusCell: UITableViewCell {
                     name = "avatar_vgirl"
                 }
             }
+        
+            if let rank = status?.user?.mbrank {
+                if rank >= 1 && rank < 6 {
+                   vipImage.image = UIImage.init(named: "common_icon_membership_level\(rank)")
+                    nickName.textColor = UIColor.orange
+                }else{
+                    vipImage.image = nil
+                    nickName.textColor = UIColor.black
+                }
+            }
+            
             enterPrise.image = UIImage.init(named: name!)
             nickName.text = status?.user?.screen_name
             source.text = status?.source

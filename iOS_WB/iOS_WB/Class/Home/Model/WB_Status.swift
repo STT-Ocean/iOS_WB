@@ -15,6 +15,9 @@ class User: NSObject,HandyJSON {
     var verified: Bool = false
     // -1 没有认证   0 个人认证  235 企业  220
     var verified_type : Int = -1 // 基本类型的数据最好赋值
+    // 1- 6
+    var mbrank : Int = -1
+    
     required override init() {
         
     }
@@ -34,6 +37,7 @@ class WB_Status: NSObject,HandyJSON {
     var user : User?
     var text : String? 
     required  override   init() {
+        
     }
     
 }
