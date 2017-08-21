@@ -55,7 +55,6 @@ class Home_StatusCell: UITableViewCell {
             // swift 4 中 where 语句和swift 3 中不一样
             if let sourceString : NSString = status?.source! as NSString?, sourceString != "" {
                 let startIndex = sourceString.range(of: ">").location + 1
-//                let endIndex = sourceString.range(of: "</").location
                 let endIndex = sourceString.range(of: "<", options: NSString.CompareOptions.backwards).location
                 // 倒序查找
                 let sour = sourceString.substring(with: NSMakeRange(startIndex, endIndex - startIndex))
@@ -63,52 +62,15 @@ class Home_StatusCell: UITableViewCell {
             }
             
             if let time = status?.created_at {
-                var formatter = DateFormatter()
-                formatter.dateFormat = "EE MM dd HH:mm:ss Z yyyy"
-                formatter.locale = Locale.init(identifier: "en")
-                guard let createData = formatter.date(from: time)  else{
-                    return
-                }
-                var  textStr = ""
-                var formtterStr = "HH:mm"
-                let calendar = NSCalendar.current
-                /*
-                let comps  =  calendar.dateComponents([Calendar.Component.year,Calendar.Component.month,Calendar.Component.day], from: createData)
-                */
-                if calendar.isDateInToday(createData){
-                    let interVal = Int(Date().timeIntervalSince(createData))
-                    if interVal < 60 {
-                        textStr = "刚刚"
-                    }else if interVal < 60 * 60 {
-                        textStr = "\(interVal/60)一分钟以前"
-                    }else if  interVal < 60 * 60 * 24 {
-                        textStr = "\(interVal/60/60/24)小时前"
-                    }
-                    
-                }else if calendar.isDateInYesterday(createData){
-                    formtterStr = "昨天 :" + formtterStr
-                    formatter.dateFormat = formtterStr
-                    textStr = formatter.string(from: createData)
-                }else{
-                    // 获取两个时间 相差的
-                    let comps  =  calendar.dateComponents([Calendar.Component.year,Calendar.Component.month,Calendar.Component.day], from: createData, to: Date())
-                    if comps.year! >= 1 {
-                        formtterStr = "yyyy-MM-dd " + formtterStr
-                    }else{
-                        // 1
-                        formtterStr = "MM-dd" + formtterStr
-                    }
-                    formatter.dateFormat = formtterStr
-                    textStr = formatter.string(from: createData)
-                }
-                timeLabel.text = textStr
+                let formatter = DateFormatter()
+                let createData = Date.createDate(time, "EE MM dd HH:mm:ss Z yyyy")
+                timeLabel.text = createData.descriptionStr()
             }
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         
     }
 
