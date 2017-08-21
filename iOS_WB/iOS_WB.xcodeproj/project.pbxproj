@@ -70,6 +70,7 @@
 		B0DDCC121F468E7900B29B8C /* Home_StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDCC111F468E7900B29B8C /* Home_StatusCell.swift */; };
 		B0DE3BC11F453FED00AEB3D7 /* String+Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */; };
 		B0E792601F4AB89C00E45F57 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E7925F1F4AB89C00E45F57 /* StatusViewModel.swift */; };
+		B0E792641F4AC9F900E45F57 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E792631F4AC9DA00E45F57 /* R.generated.swift */; };
 		B0EF01CE1F167F3E006BBF24 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */; };
 		B0EF01CF1F167F3E006BBF24 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */; };
 /* End PBXBuildFile section */
@@ -163,6 +164,7 @@
 		B0DDCC111F468E7900B29B8C /* Home_StatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_StatusCell.swift; sourceTree = "<group>"; };
 		B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extern.swift"; sourceTree = "<group>"; };
 		B0E7925F1F4AB89C00E45F57 /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		B0E792631F4AC9DA00E45F57 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 		E988EBB233336ECD5587986A /* Pods-iOS_WB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_WB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_WB/Pods-iOS_WB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 		B02CD5E81F13DFD400EE9BA1 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B0E792631F4AC9DA00E45F57 /* R.generated.swift */,
 				B0CCF6141F28E8C7002A9515 /* UIButton+Extern.swift */,
 				B06FF0FE1F2A4146007D4198 /* UIBarButtonItem+Exten.swift */,
 				B06FF1001F2A4720007D4198 /* Title_Button.swift */,
@@ -490,6 +493,7 @@
 				B02CD5AE1F13D1C400EE9BA1 /* Resources */,
 				56D9BA9BE828568C62032810 /* [CP] Embed Pods Frameworks */,
 				4A2233474C59CF55095BD3E2 /* [CP] Copy Pods Resources */,
+				B0E792611F4AC91100E45F57 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -661,6 +665,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_WB/Pods-iOS_WB-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B0E792611F4AC91100E45F57 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -668,6 +685,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E792641F4AC9F900E45F57 /* R.generated.swift in Sources */,
 				B02C635E1F458F2B00533679 /* PopView_ViewController.swift in Sources */,
 				B02C635F1F458F2B00533679 /* STPresentationController.swift in Sources */,
 				B02C63601F458F2B00533679 /* STPresentManager.swift in Sources */,

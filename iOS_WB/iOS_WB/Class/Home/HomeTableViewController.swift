@@ -13,6 +13,7 @@ class HomeTableViewController: Base_TableViewController {
     {
         didSet{
             // didSet 方法
+            
         }
     }
 //    var dataArray :[WB_Status]?
@@ -48,7 +49,8 @@ class HomeTableViewController: Base_TableViewController {
     @objc func navigationTitleViewAction(titleView:Title_Button){
 //        titleView.isSelected = !titleView.isSelected
         // 显示菜单
-        let sb = UIStoryboard.init(name: "PopView", bundle: nil)
+        let sb = R.storyboard.popView
+       // let sb = UIStoryboard.init(name: "PopView", bundle: nil)
         guard
             let menuView = sb.instantiateInitialViewController() else {
                 

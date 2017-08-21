@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - R.swift (4.0.0.alpha.3):
+    - R.swift.Library (~> 4.0.0.alpha.2)
+  - R.swift.Library (4.0.0.alpha.2)
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
@@ -21,14 +24,17 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - R.swift (~> 4.0.0.alpha.3)
   - SDWebImage (~> 4.1.0)
   - SwiftyJSON (~> 3.1.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  R.swift: 5b1459044a5ea4e75304f6d89c2e203bb3a0d478
+  R.swift.Library: 0f0f870e251e7aee5fe57bf54dc41e73eb2d8a9b
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 977206ebb86b1fc6597385e8e14d3cc7bda94de5
+PODFILE CHECKSUM: ea2dba713fc55f5f1b082243a000c4348ddcdd2c
 
 COCOAPODS: 1.2.1
