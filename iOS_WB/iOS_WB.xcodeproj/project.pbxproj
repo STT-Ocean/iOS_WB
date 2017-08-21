@@ -69,6 +69,7 @@
 		B0CCF6291F28F739002A9515 /* VisiterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0CCF6281F28F739002A9515 /* VisiterView.xib */; };
 		B0DDCC121F468E7900B29B8C /* Home_StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDCC111F468E7900B29B8C /* Home_StatusCell.swift */; };
 		B0DE3BC11F453FED00AEB3D7 /* String+Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */; };
+		B0E792601F4AB89C00E45F57 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E7925F1F4AB89C00E45F57 /* StatusViewModel.swift */; };
 		B0EF01CE1F167F3E006BBF24 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */; };
 		B0EF01CF1F167F3E006BBF24 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */; };
 /* End PBXBuildFile section */
@@ -161,6 +162,7 @@
 		B0CCF6281F28F739002A9515 /* VisiterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisiterView.xib; sourceTree = "<group>"; };
 		B0DDCC111F468E7900B29B8C /* Home_StatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_StatusCell.swift; sourceTree = "<group>"; };
 		B0DE3BC01F453FED00AEB3D7 /* String+Extern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extern.swift"; sourceTree = "<group>"; };
+		B0E7925F1F4AB89C00E45F57 /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		B0EF01CC1F167F3E006BBF24 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		B0EF01CD1F167F3E006BBF24 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 		E988EBB233336ECD5587986A /* Pods-iOS_WB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_WB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_WB/Pods-iOS_WB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				B0506B4F1F45890B0056B391 /* WB_Status.swift */,
+				B0E7925F1F4AB89C00E45F57 /* StatusViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -711,6 +714,7 @@
 				B02CD5F21F13E0A600EE9BA1 /* DiscorverTableViewController.swift in Sources */,
 				B06FF1031F2A52D4007D4198 /* TableViewController+NavigationBar.swift in Sources */,
 				B0DDCC121F468E7900B29B8C /* Home_StatusCell.swift in Sources */,
+				B0E792601F4AB89C00E45F57 /* StatusViewModel.swift in Sources */,
 				B0AE0BCD1F3D536200650DB7 /* WB_NetWorkTools.swift in Sources */,
 				B06FF1011F2A4720007D4198 /* Title_Button.swift in Sources */,
 				B0EF01CF1F167F3E006BBF24 /* NullViewController.swift in Sources */,
