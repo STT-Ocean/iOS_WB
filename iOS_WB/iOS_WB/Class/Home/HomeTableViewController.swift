@@ -22,14 +22,19 @@ class HomeTableViewController: Base_TableViewController {
         super.viewDidLoad()
         visiterView?.setUpVisitorInfo(imageName: nil, title: "这里是首页，欢迎来到首页")
         setUpNavigationItem()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(titleButtonAction), name: NSNotification.Name(STPresentManagerDidDismisstedController), object: animatorManager)
         NotificationCenter.default.addObserver(self, selector: #selector(titleButtonAction), name: Notification.Name(STPresentManagerDidPresentedController), object: animatorManager)
-        
         WB_NetWorkTools.shareInstance.getHomeUserData { (status, error ) in
             self.dataArray = status
             self.tableView.reloadData()
             
         }
+        tableView.separatorStyle = .none
+        // 效果比较简单的时候可以这样使用 实际开发中不会这样使用
+        tableView.estimatedRowHeight = 200
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
     }
     private func setUpNavigationItem(){
         setNavigationControllerBarLeftItemAndRightItem(leftImageName: "navigationbar_friendattention", rightImageName: "navigationbar_pop")
