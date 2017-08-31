@@ -57,6 +57,20 @@ class StatusViewModel: NSObject {
             let createData = Date.createDate(time, "EE MM dd HH:mm:ss Z yyyy")
             create_Time = createData.descriptionStr()
         }
+        //
+        thumbnail_pic = [URL]()
+        if let pictures = status.pic_urls {
+            for dic in pictures {
+                
+                guard let urlString = dic["thumbnail_pic"] as? String else{
+                    continue
+                }
+                guard let url = URL.init(string: urlString) else {
+                    continue
+                }
+                thumbnail_pic?.append(url)
+            }
+        }
         
     }
     // 用户认证var <#name#> : String?
@@ -70,5 +84,7 @@ class StatusViewModel: NSObject {
     // 处理时间
     var create_Time:String = ""
     
+    // 图片 保存所有的图片配图
+    var thumbnail_pic : [URL]?
     
 }

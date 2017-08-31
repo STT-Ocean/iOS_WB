@@ -38,7 +38,8 @@ class WB_NetWorkTools: AFHTTPSessionManager {
             let resData = obj["statuses"]
             let statusArray = [WB_Status].deserialize(from:resData.arrayObject! as NSArray )
             completion(statusArray! as! Array<WB_Status>,nil)
-        }) { (task , error ) in
+        }) { (_ task , _ error ) in
+            
         }
     }
     

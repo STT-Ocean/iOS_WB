@@ -35,7 +35,9 @@ class WB_Status: NSObject,HandyJSON {
     var reposts_count : String?
     var comments_count : String?
     var user : User?
-    var text : String? 
+    var text : String?
+    var pic_urls: [[String : Any]]?
+    
     required  override   init() {
         
     }
