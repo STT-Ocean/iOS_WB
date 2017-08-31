@@ -95,7 +95,6 @@ class HomeTableViewController: Base_TableViewController {
        // let sb = UIStoryboard.init(name: "PopView", bundle: nil)
         guard
             let menuView = sb.instantiateInitialViewController() else {
-                
                 return
         }
         // 自定义专场动画
@@ -124,7 +123,6 @@ class HomeTableViewController: Base_TableViewController {
         titleView.setTitle("首页", for: .normal)
         return titleView
     }()
-    
     // 在oc中调用dealloc 方法 在swift中调用deinit 方法
     deinit {
         NotificationCenter.default.removeObserver(self)
@@ -139,6 +137,7 @@ extension HomeTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Home_StatusCell", for: indexPath) as! Home_StatusCell
         cell.statusViewModel = self.dataViewModelArray[indexPath.row]
+        // cell
 //        cell.status = self.dataArray[indexPath.row]
         return cell
     }
